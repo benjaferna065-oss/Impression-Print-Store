@@ -19,10 +19,15 @@ h1 {
     margin: 0;
 }
 
+/* ... seu código anterior do body e header ... */
+
 .container-imagem {
     display: flex;
+    flex-direction: column; /* Coloca a imagem em cima e o texto embaixo */
+    align-items: center;    /* Centraliza os dois horizontalmente */
     justify-content: center;
     padding: 50px 20px;
+    gap: 20px;              /* Cria um espaço entre a imagem e o texto Xerox */
 }
 
 img {
@@ -30,5 +35,15 @@ img {
     height: auto;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    border: 5px solid #fff; /* Moldura branca */
+    border: 5px solid #fff;
 }
+
+h2 {
+    color: #4a3728;         /* O mesmo marrom do título */
+    font-size: 2rem;
+    background-color: #fff; /* Fundo branco para parecer um selo */
+    padding: 10px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
