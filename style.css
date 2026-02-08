@@ -24,20 +24,23 @@ h1 {
 /* Centraliza a vitrine na tela */
 .vitrine {
     display: flex;
-    justify-content: center;
-    padding: 40px 20px;
+    justify-content: center; /* Centraliza os cartões na tela */
+    flex-wrap: wrap;         /* PERMITE QUE OS CARDS PULEM PARA A LINHA DE BAIXO */
+    gap: 20px;               /* Espaço entre um card e outro */
+    padding: 40px;
+    max-width: 1200px;       /* Limita a largura máxima da vitrine */
+    margin: 0 auto;          /* Centraliza a vitrine toda no meio da página */
 }
 
-/* O cartão do serviço */
 .servico-card {
     background-color: #fff;
     border-radius: 20px;
-    overflow: hidden; /* Garante que a imagem não saia da borda arredondada */
-    width: 300px;
+    width: 250px;            /* Define um tamanho fixo e bom para cada card */
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     text-align: center;
-    border: 1px solid #cc9e34; /* Bordinha dourada */
+    border: 1px solid #cc9e34;
     transition: transform 0.3s ease;
+    flex-shrink: 0;          /* Impede que o card seja "esmagado" */
 }
 
 .servico-card:hover {
@@ -81,5 +84,6 @@ h1 {
 .btn-orcamento:hover {
     opacity: 0.9;
 }
+
 
 
