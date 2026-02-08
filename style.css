@@ -17,33 +17,18 @@ header {
 h1 {
     color: #4a3728;
     margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
-p {
-    color: #5d4037;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-/* Estilização da área da imagem */
-div {
+.container-imagem {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;
-    padding: 40px 20px;
+    justify-content: center;
+    padding: 50px 20px;
 }
 
 img {
-    max-width: 100%; /* Impede que a imagem ultrapasse a tela */
+    max-width: 100%;
     height: auto;
-    border-radius: 15px; /* Bordas arredondadas para um ar moderno */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
-    border: 5px solid #fff; /* Moldura branca tipo fotografia */
-    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
-}
-
-img:hover {
-    transform: scale(1.02); /* Aumenta levemente ao passar o mouse */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 5px solid #fff; /* Moldura branca */
 }
