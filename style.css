@@ -21,29 +21,65 @@ h1 {
 
 /* ... seu código anterior do body e header ... */
 
-.container-imagem {
+/* Centraliza a vitrine na tela */
+.vitrine {
     display: flex;
-    flex-direction: column; /* Coloca a imagem em cima e o texto embaixo */
-    align-items: center;    /* Centraliza os dois horizontalmente */
     justify-content: center;
-    padding: 50px 20px;
-    gap: 20px;              /* Cria um espaço entre a imagem e o texto Xerox */
+    padding: 40px 20px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    border: 5px solid #fff;
+/* O cartão do serviço */
+.servico-card {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden; /* Garante que a imagem não saia da borda arredondada */
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 1px solid #cc9e34; /* Bordinha dourada */
+    transition: transform 0.3s ease;
 }
 
-h2 {
-    color: #4a3728;         /* O mesmo marrom do título */
-    font-size: 2rem;
-    background-color: #fff; /* Fundo branco para parecer um selo */
-    padding: 10px 30px;
-    border-radius: 50px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.servico-card:hover {
+    transform: translateY(-10px); /* Efeito de flutuar ao passar o mouse */
 }
+
+.servico-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+}
+
+.info {
+    padding: 20px;
+}
+
+.info h2 {
+    color: #4a3728;
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+}
+
+.info p {
+    color: #8d6e63;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* Botão de Orçamento */
+.btn-orcamento {
+    background: linear-gradient(to right, #cc9e34, #4a3728);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.btn-orcamento:hover {
+    opacity: 0.9;
+}
+
 
