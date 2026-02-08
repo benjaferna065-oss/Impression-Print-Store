@@ -2,23 +2,48 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to left, #fff, #cc9e34);
     margin: 0;
-    padding: 0; /* Mudei para 0 para o header encostar no topo */
+    padding: 0;
+    min-height: 100vh;
 }
 
 header {
     background: linear-gradient(to right, #cc9e34, #fff);
-    padding: 40px 20px; /* Espaçamento interno para o texto respirar */
+    padding: 40px 20px;
     text-align: center;
-    border-bottom: 2px solid #a67c27; /* Uma linha sutil para definir o fim do header */
+    border-bottom: 2px solid #a67c27;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 h1 {
-    color: #4a3728; /* Marrom escuro para leitura clara */
+    color: #4a3728;
     margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 p {
     color: #5d4037;
     margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Estilização da área da imagem */
+div {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    padding: 40px 20px;
+}
+
+img {
+    max-width: 100%; /* Impede que a imagem ultrapasse a tela */
+    height: auto;
+    border-radius: 15px; /* Bordas arredondadas para um ar moderno */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    border: 5px solid #fff; /* Moldura branca tipo fotografia */
+    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+img:hover {
+    transform: scale(1.02); /* Aumenta levemente ao passar o mouse */
 }
